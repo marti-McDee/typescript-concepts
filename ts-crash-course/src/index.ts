@@ -1,3 +1,4 @@
+/* Variables */
 let id: number = 5
 let company: string = 'Geffen Records'
 let isPublished: boolean = true
@@ -7,11 +8,14 @@ x = 30
 
 let ids: number[] = [1, 2, 3, 4, 5,]
 
-// tuple
+
+
+/* tuple */
 let person: [number, string, boolean] = [23, 'David', false]
 
 
-// tuple array
+
+/* tuple array */
 let employee: [number, string][]
 
 employee = [
@@ -21,11 +25,13 @@ employee = [
 ]
 
 
-// Union
+
+/* Union */
 let pid: string | number | boolean = 'hi'
 
 
-// Enum
+
+/* Enum */
 enum Direction1 {
   Up = 1,
   Down,
@@ -34,7 +40,8 @@ enum Direction1 {
 }
 
 
-// Objects
+
+/* Objects */
 type User = {
   id: number,
   name: string,
@@ -49,13 +56,16 @@ const user: User = {
 const uid = user.id = 4
 // console.log('user id: ' + uid)
 
-// Type Assertion
+
+
+/* Type Assertion */
 let cid: any = '1'
 // let cxid = cid as number
 let cxid = <number>cid
 
 
-// Functions
+
+/* Functions */
 function addNum(x: number, y: number): number {
   return x + y
 }
@@ -69,7 +79,8 @@ function log(message: string | number): void {
 log(3)
 
 
-// Interfaces
+
+/* Interfaces */
 interface UserInterface {
   readonly id: number,
   name: string
@@ -90,7 +101,8 @@ const add: MathFunc = (x: number, y: number): number => x + y
 // console.log(add(2,3))
 
 
-// Classes
+
+/* Classes */
 interface PersonInterface {
   id: number,
   name: string
@@ -117,7 +129,8 @@ const jack: Person = new Person(3, 'Jack')
 // console.log(jack.register())
 
 
-// Subclasses
+
+/* Subclasses */
 class Employee extends Person {
   position: string
 
@@ -131,7 +144,8 @@ const emp = new Employee(2, 'Adam', 'Musician')
 // console.log(emp.register())
 
 
-// Generics
+
+/* Generics */
 function getArray<T>(items: T[]): T[] {
   return new Array().concat(items)
 }
@@ -144,7 +158,6 @@ strArray.push('jack')
 
 // console.log(numArray)
 // console.log(strArray)
-
 
 
 interface IApp {
